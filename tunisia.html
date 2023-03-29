@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tunisia's Jasmine Revolution</title>
+        
+        <link rel = "stylesheet" href = "styles/tunisia.css">
+        <link rel = "stylesheet" href = "styles/general.css">
+    </head>
+
+    <body style="background-color:green;">
+        <div class = "background"> 
+            <div class = "tunisia-header" >
+                <img class = "tunisia-cover-img" src = "pictures/tunisia-1.jpeg" >
+
+                <div class = "tunisia-title-div">   
+                    <p class = "tunisia-title-p">
+                        Tunisia's Jasmine Revolution 
+                    </p>
+
+                    <center>
+                        <p class = "tunisia-subtitle-p">
+                            On December 17, 2010 26-year-old street vendor 
+                            Mohamed Bouazizi self-immolated in Sidi Bouzid,
+                            Tunisia. His dramatic action is considered the 
+                            start of the Arab Spring, a period of pro-democracy 
+                            uprisings that reverberated through North Africa 
+                            and the Middle East.   
+
+                        </p>
+                        <p class = "tunisia-trigger-warning">
+                            Trigger Warning: Graphic images, death, self-immolation, violence
+                        </p>
+
+                        <div class="home-button-div">
+                            <button class="home-button" type = "button" onclick="window.location.href = 'home.html';"> Home </button>
+                        </div>
+                    </center>
+                </div> 
+
+            </div>
+
+
+            
+            <div class = "tunisia-section2-div">
+                <div class = "tunisia-horizontal-scroll"> 
+                    <div class="scroll"></div>
+                    <div class="container">
+                        <div class="page page_1">
+                            <img class="sidi-bouzid-img" src = "pictures/sidi-bouzid-2.jpeg">
+                            <div class = "tunisia-scroll1-rect">
+                                <div class = "tunisia-scroll1-title">
+                                    <p>
+                                        How it all started
+                                    </p>
+                                </div>
+                                <div class = "tunisia-scroll1-copy-div" >
+                                    <p class = "tunisia-scroll1-copy-p">
+                                        Mohamed Bouazizi lived in the impoverished city of Sidi Bouzid, 
+                                        about 100 miles south of the capital Tunis. As the prices of 
+                                        commodities spiked across the world, Bouazizi found that rising 
+                                        prices made it difficult for him to afford food for his family 
+                                        with the money he earned selling produce in the center of town.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="page page_2">
+                            <img class="sidi-bouzid-img2" src = "pictures/sidi-bouzid.jpeg">
+                            <div class = "tunisia-scroll2-rect">
+                                <div class = "tunisia-scroll2-copy-div">
+                                    <p class = "tunisia-scroll2-copy">
+                                        On the morning of December 17, Bouazizi was selling fruit without 
+                                        a government permit. A municipal inspector, confiscated Bouazizi's 
+                                        merchandise and, according to some residents, slapped the fruit 
+                                        seller. Bouazizi went to the police station to retrieve his 
+                                        confiscated electric scale and was refused, then asked to meet with 
+                                        the governor and was again refused. 
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="page page_3">
+                            <img class="sidi-bouzid-img3" src = "pictures/sidi-bouzid-3.webp">
+                            <div class = "tunisia-scroll3-rect">
+                                <div class = "tunisia-scroll3-copy-div">
+                                    <p class = "tunisia-scroll3-copy">
+                                        At around 11:30 am, he brought his cart outside the governor's 
+                                        office, <strong>poured flammable liquid over his head and ignited his
+                                        entire body. </strong> 
+                                        <br>
+                                        <br>
+                                        He died three weeks later.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "tunisia-section3-div" style = "
+                margin-top: 30px;
+                display: flex;
+                flex-direction: row;
+                ">
+                <div class = "tunisia-section3-flex-1" style = "flex: 1;">
+                    <p class = "tunisia-section3-text">
+                        Outraged by the events that led to Bouazizi's self-immolation, 
+                        protests began in Sidi Bouzid within hours, building for more 
+                        than two weeks, with attempts by police to quiet the unrest 
+                        serving only to fuel what was quickly becoming a violent and 
+                        deadly movement. Bouazizi's actions also triggered a number of 
+                        self-immolations, in protests emulating his own.
+
+                        <br>
+                        <br>
+
+                        The protests, which became known as the Jasmine Revolution, 
+                        lasted a month and inspired similar revolutions in <strong> Egypt, 
+                        Bahrain, Yemen, Libya and Syria, </strong> where citizens railed against 
+                        high unemployment, high food prices, corruption and political 
+                        repression. Tunisians had grown resentful of their 
+                        authoritarian government, creating a powder keg awaiting the 
+                        spark of Bouazizi's public death. Unrest persisted as a new 
+                        regime took over, leaving many citizens of Tunisia feeling as 
+                        though their needs were still being ignored.
+
+                    </p>
+                </div>
+
+                <div class = "tunisia-section3-flex-2" style = "flex: 2;">
+                    <img class = "arab-spring-map-img" src = "pictures/Arab_Spring_map5-01.png" > 
+                    <p class = "data-header">
+                        Countries affected by the Arab Spring
+                    </p>
+                    <button class="arab-spring-button1"> 2011-2012</button>
+                    
+                </div>
+            </div>
+                
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+            <div class= "scroll-back-to-top"></div>            
+        </div>
+
+        
+        
+        <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+
+
+
+
+        //Section 2- Tunisia horizontal Scroll
+        const container = document.querySelector('.container');
+        let scrollLine = document.querySelector('.scroll');
+
+        container.addEventListener('wheel', (e)=> {
+            e.preventDefault();
+            container.scrollLeft += e.deltaY;
+            scrollLine.style.width = container.scrollLeft / 2 + 'px';
+        })
+
+        </script>
+
+
+    </body>
+
+</html>
