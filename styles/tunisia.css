@@ -269,21 +269,43 @@ img{
 }
 
 
-.arab-spring-map-img{
+.tunisia-map-2010-img{
   margin-top: 100px;
-  margin-left: 100px;
   width: 700px;
 }
 
-.arab-spring-button1{
-  background-color: #04AA6D;
-  border: none;
+.tunisia-section3-map-div{
+  margin-left: 50px;
+}
+
+.map-header{
   color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 20px;
+}
+
+
+.tunisia-section3-map-flex-1{
+  background-color: pink;
+}
+
+.tunisia-section3-map-flex-2{
+  background-color: lightblue;
+}
+
+.tunisia-section3-map-flex-3{
+  background-color: lightgreen;
+}
+
+.tunisia-map-2010-img{
+  width: 700px;
+  height: 460px;
+}
+
+.tunisia-map-tenyears-img{
+  width: 700px;
+  height: 460px;
+}
+
+
+.button{
+  color: black;
 }

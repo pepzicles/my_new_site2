@@ -2,9 +2,10 @@
 <html>
     <head>
         <title>Tunisia's Jasmine Revolution</title>
-        
-        <link rel = "stylesheet" href = "styles/tunisia.css">
         <link rel = "stylesheet" href = "styles/general.css">
+        <link rel = "stylesheet" href = "styles/tunisia.css">
+
+        <img class = "tunisia-map-2010-img" src = "pictures/Arab_Spring_map5-02.png" >
     </head>
 
     <body style="background-color:green;">
@@ -132,12 +133,32 @@
                 </div>
 
                 <div class = "tunisia-section3-flex-2" style = "flex: 2;">
-                    <img class = "arab-spring-map-img" src = "pictures/Arab_Spring_map5-01.png" > 
-                    <p class = "data-header">
-                        Countries affected by the Arab Spring
-                    </p>
-                    <button class="arab-spring-button1"> 2011-2012</button>
-                    
+                    <div class = "tunisia-section3-map-div" style = "
+                        display: flex;
+                        flex-direction: column;
+                        ">
+                        <div class = "tunisia-section3-map-flex-1" style = "flex: 1;">
+                            Countries affected by the Arab Spring
+                        </div>
+
+                        <div class = "tunisia-section3-map-flex-2" style = "flex: 1;">
+                            <div class="tunisia-map-buttons">
+                                <button class="btn btn-warning" 
+                                        onclick=before();>
+                                    Before
+                                </button>
+                                <button  class="btn btn-success" 
+                                         onclick=after();>
+                                    After
+                                </button>
+                             </div>
+                        </div>
+
+                        <div class = "tunisia-section3-map-flex-3" style = "flex: 1;">
+                            <img class = "tunisia-map-2010-img" src = "pictures/Arab_Spring_map5-01.png" >
+                        </div>
+                
+                    </div>
                 </div>
             </div>
                 
@@ -184,6 +205,24 @@
             scrollLine.style.width = container.scrollLeft / 2 + 'px';
         })
 
+
+
+        //Section 3- buttons to change maps
+        function before(){
+            document.getElementsByClassName("tunisia-map-2010-img")
+            .src="pictures/Arab_Spring_map5-01.png";
+            console.log("before works");
+        }
+            
+        function after(){
+            document.getElementsByClassName("tunisia-map-2010-img")
+            .src="pictures/Arab_Spring_map5-02.png";
+            console.log("after works");
+        }
+
+        before();
+        after();
+        
         </script>
 
 
