@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    position:relative;
+  }
+  canvas {
+    display: block;
+  }
+
+.home-button{
+    background-color: rgb(20,20,20);
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 16px;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+.hk-section1{
+    margin-top: 0px;
+    position:relative;
+}
+
+.hk-section2-div{
+    position: absolute;
+    top: 100%;
+}
+
+.hk-section2-text{
+    margin-left: 100px;
+    margin-top: 130px;
+}
+
+.hk-section2-1{
+    font-size: 17px;
+    color: white;
+}
+
+.hk-section2-2{
+    color: white;
+    font-size: 20px;
+}
+
+.hk-section2-3{
+    color: white;
+    font-size: 25px;
+}
+
+.fishball1{
+    width: 600px;
+    margin-left: 120px;
+}
+
+
+.hk-section3-div{
+    position: absolute;
+    top: 217%;
+}
+
+.fishball2{
+    width: 100px;
+}
+
+.hk-section3-2{
+    color: rgb(255, 124, 146);
+    font-size: 25px;
+    width: 800px;
+    margin-top: 50px;
+}
+
+.hk-section3-3{
+    color: white;
+    font-size: 18px;
+    width: 750px;
+    margin-top: 30px;
+}
+
+.hk-section3-4{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.hk-section4-div{
+    background-color: rgb(20,20,20);
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 380%;
+}
+
+
+.hk-section4-class{
+    position: absolute;
+    margin-top: 1000px;
+}
+
+
+.hk-section4-1{
+    color: white;
+    display:inline-block;
+    width: 500px;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: 200px;
+}

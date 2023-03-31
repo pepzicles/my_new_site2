@@ -1,7 +1,17 @@
+.front-gif{
+    width: 100%;
+    position: absolute;
+    height: 120%;
+    margin-top: -150px;
+    opacity: 0.2;
+  }
+
 .title-div{
-    margin-top: 150px;
+    position: absolute;
+    margin-top: 100px;
     width: 800px;
     margin-left: 100px;
+    color: white;
 }
 
 .title-p{
@@ -9,13 +19,18 @@
     font-weight: bold;
 }
 
+
 .description1-p{
-    line-height: 1.5
+    line-height: 1.5;
+    position: absolute;
+
 }
 
 .description-div{
-    margin-top: 30px;
+    margin-top: 270px;
+    position: absolute;
     margin-left: 100px;
+    color: white;
     width: 550px;
 }
 
@@ -25,22 +40,27 @@
 
 .buttons-countries-div{
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: start;
     width: 270px;
     margin-left: 100px;
-    margin-top: 30px;
+    margin-top: 470px;
 }
 
 .button-tunisia,
 .button-hk,
 .button-nyc{
     margin-bottom: 13px;
+    font-family: Georgia;
     font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .image-home{
     background-color: lightpink;
     width: 300px; 
     margin-left: 800px;
+    font-family: Georgia;
 }

@@ -4,11 +4,12 @@
         <title>Tunisia's Jasmine Revolution</title>
         <link rel = "stylesheet" href = "styles/general.css">
         <link rel = "stylesheet" href = "styles/tunisia.css">
-
-        <img class = "tunisia-map-2010-img" src = "pictures/Arab_Spring_map5-02.png" >
+        <link rel = "stylesheet" href = "styles/before-after.css">
+        <script src = "before-after.js" defer></script>
+        
     </head>
 
-    <body style="background-color:green;">
+    <body style="background-color: rgb(20,20,20);">
         <div class = "background"> 
             <div class = "tunisia-header" >
                 <img class = "tunisia-cover-img" src = "pictures/tunisia-1.jpeg" >
@@ -102,6 +103,7 @@
                 </div>
             </div>
 
+
             <div class = "tunisia-section3-div" style = "
                 margin-top: 30px;
                 display: flex;
@@ -138,18 +140,20 @@
                         flex-direction: column;
                         ">
                         <div class = "tunisia-section3-map-flex-1" style = "flex: 1;">
-                            Countries affected by the Arab Spring
+                            <p class = "tunisia-section3-map-flex-1-p">
+                                Countries affected by the Arab Spring
+                            </p>
                         </div>
 
                         <div class = "tunisia-section3-map-flex-2" style = "flex: 1;">
                             <div class="tunisia-map-buttons">
                                 <button class="btn btn-warning" 
                                         onclick=before();>
-                                    Before
+                                    During the revolution
                                 </button>
                                 <button  class="btn btn-success" 
                                          onclick=after();>
-                                    After
+                                    10 years after the revolution
                                 </button>
                              </div>
                         </div>
@@ -157,19 +161,58 @@
                         <div class = "tunisia-section3-map-flex-3" style = "flex: 1;">
                             <img class = "tunisia-map-2010-img" src = "pictures/Arab_Spring_map5-01.png" >
                         </div>
-                
                     </div>
                 </div>
             </div>
+            
+
+            <div class = "tunisia-section4">
+                <center>
+                    <p class = "tunisia-section4-p">
+                        The anger and violence became so intense that President Ben Ali
+                        fled Tunisia with his family on 14 January 2011. They were 
+                        eventually welcomed into Saudi Arabia, ending his 23-year rule 
+                        and sparking "angry condemnation" among Saudis. 
+                        <br>
+                        <br>
+                        <strong>Today, Tunisia’s transition to democracy remains incomplete and under stress. </strong>
+                    </p>
+
+                    <p class = "label-before-after">
+                        <i>Tahrir Square, Eqypt, before and during the 2011 revolution.</i>
+                    </p>
+                </center>
+
+            </div>
+
+
+            <main>
+                <div class = "container-beforeafter">
+                  <div class = "image-container">
+                    <img class = "image-before slider-image" src = "pictures/tahrir1.jpeg" alt = "Before image"/>
+                    <img class = "image-after slider-image" src = "pictures/tahrir2.jpeg" alt = "After image"/>
+                  </div>
+                  <input type = "range" min = "0" max = "100" value = "50" class = "slider" aria-label = "before-after"/>
+                  <div class = "slider-line">
+                    <div class = "slider-button"
+                      aria-hidden = "true">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256"><path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path></svg>
+                    </div>
+                  </div>
+                </div>
+            </main>
+
                 
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <div class= "scroll-back-to-top"></div>
 
 
-
+                        
             <div class= "scroll-back-to-top"></div>            
         </div>
+    
 
-        
+        <script src="before-after.js"></script>   
         
         <script>
         // Get the button
@@ -222,7 +265,7 @@
 
         before();
         after();
-        
+
         </script>
 
 

@@ -1,6 +1,9 @@
 .background{
   background-color: rgb(20,20,20);
 }
+
+
+
 #myBtn {
     display: none;
     position: fixed;
@@ -19,6 +22,18 @@
   
   #myBtn:hover {
     background-color: #555;
+  }
+
+  .home-button{
+    background-color: rgb(20,20,20);
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 16px;
+    position: fixed;
+    cursor: pointer;
+    margin-left: 70px;
   }
 
 img{
@@ -43,7 +58,7 @@ img{
 }
 
 .scroll-back-to-top{
-    margin-bottom: 2000px;
+    margin-bottom: 0px;
 }
 
 .home-button{
@@ -275,7 +290,7 @@ img{
 }
 
 .tunisia-section3-map-div{
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 .map-header{
@@ -284,15 +299,21 @@ img{
 
 
 .tunisia-section3-map-flex-1{
-  background-color: pink;
+  background-color: rgb(20,20,20);
+}
+
+
+.tunisia-section3-map-flex-1-p{
+  font-size: 20px;
+  color: white;
 }
 
 .tunisia-section3-map-flex-2{
-  background-color: lightblue;
+  background-color: rgb(20,20,20);
 }
 
 .tunisia-section3-map-flex-3{
-  background-color: lightgreen;
+  background-color: rgb(20,20,20);
 }
 
 .tunisia-map-2010-img{
@@ -308,4 +329,16 @@ img{
 
 .button{
   color: black;
+}
+
+.tunisia-section4-p{
+  color: white;
+  width: 1000px;
+  margin-top: 150px;
+}
+
+.label-before-after{
+  font-size: 15; 
+  color: rgb(200, 200, 200);
+  margin-top: 80px;
 }
