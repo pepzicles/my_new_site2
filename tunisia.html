@@ -5,6 +5,7 @@
         <link rel = "stylesheet" href = "styles/general.css">
         <link rel = "stylesheet" href = "styles/tunisia.css">
         <link rel = "stylesheet" href = "styles/before-after.css">
+        <script src = "before-after.js" defer ></script>
         
     </head>
 
@@ -146,19 +147,16 @@
 
                         <div class = "tunisia-section3-map-flex-2" style = "flex: 1;">
                             <div class="tunisia-map-buttons">
-                                <button class="btn btn-warning" 
-                                        onclick=before();>
-                                    During the revolution
-                                </button>
-                                <button  class="btn btn-success" 
-                                         onclick=after();>
-                                    10 years after the revolution
-                                </button>
+                                <div>
+                                    <button class = "btn-before" id="btn-before">During the Revolution</button>
+                                    <button class = "btn-after" id="btn-after">10 Years After the Revolution</button>
+                                </div>
+                                <img 
+                                    src="pictures/ArabSpringMap1.png"
+                                    alt="Map of Countries affected during the Arab Spring"
+                                    id = "images-before-after">
+                                <script src="javascript/warButtons.js"></script>
                              </div>
-                        </div>
-
-                        <div class = "tunisia-section3-map-flex-3" style = "flex: 1;">
-                            <img class = "tunisia-map-2010-img" src = "pictures/Arab_Spring_map5-01.png" >
                         </div>
                     </div>
                 </div>
@@ -180,39 +178,36 @@
                     <p class = "label-before-after">
                         <i>Tahrir Square, Eqypt, before and during the 2011 revolution.</i>
                     </p>
+
+                    <script src = "javascript/before-after.js" defer ></script>
+                    <div class = "container-beforeafter">
+                        <div class = "image-container">
+                          <img class = "image-before slider-image" src = "pictures/tahrir1.jpeg" alt = "Before image"/>
+                          <img class = "image-after slider-image" src = "pictures/tahrir2.jpeg" alt = "After image"/>
+                        </div>
+                        <input type = "range" min = "0" max = "100" value = "50" class = "slider" aria-label = "before-after"/>
+                        <div class = "slider-line">
+                          <div class = "slider-button"
+                            aria-hidden = "true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256"><path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path></svg>
+                          </div>
+                        </div>
+                    </div>
+
+
+
                 </center>
 
             </div>
 
-
-            <main>
-                <div class = "container-beforeafter">
-                  <div class = "image-container">
-                    <img class = "image-before slider-image" src = "pictures/tahrir1.jpeg" alt = "Before image"/>
-                    <img class = "image-after slider-image" src = "pictures/tahrir2.jpeg" alt = "After image"/>
-                  </div>
-                  <input type = "range" min = "0" max = "100" value = "50" class = "slider" aria-label = "before-after"/>
-                  <div class = "slider-line">
-                    <div class = "slider-button"
-                      aria-hidden = "true">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256"><path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path></svg>
-                    </div>
-                  </div>
-                </div>
-            </main>
-
                 
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             <div class= "scroll-back-to-top"></div>
-
-
-                        
             <div class= "scroll-back-to-top"></div>            
         </div>
     
 
-        
-        <script src="before-after.js"></script>  
+    
         <script>
         // Get the button
         let mybutton = document.getElementById("myBtn");
@@ -261,13 +256,9 @@
             .src="pictures/Arab_Spring_map5-02.png";
             console.log("after works");
         }
-
-        before();
-        after();
-
-        </script> 
         
-
+        
+    </script> 
     </body>
 
 </html>

@@ -52,7 +52,7 @@ function draw() {
 function mouseWheel(event) {
   //move the square according to the vertical scroll amount
   pos -= event.delta;
-  alpha += 0.5*event.delta;
-  alpha3 += 0.5*event.delta;
-  alpha2 += 0.25*event.delta;
+  alpha += 1*event.delta;
+  alpha2 += 1*event.delta;
+  alpha3 += 1*event.delta;
 }
