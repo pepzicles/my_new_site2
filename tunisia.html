@@ -5,7 +5,7 @@
         <link rel = "stylesheet" href = "styles/general.css">
         <link rel = "stylesheet" href = "styles/tunisia.css">
         <link rel = "stylesheet" href = "styles/before-after.css">
-        <script src = "before-after.js" defer ></script>
+        <!-- <script src = "before-after.js" defer ></script> -->
         
     </head>
 
@@ -209,6 +209,13 @@
 
     
         <script>
+            //Before and after 
+            const beforeAfterContainer = document.querySelector('.container-beforeafter');
+            document.querySelector('.slider').addEventListener('input', (e) => {
+            beforeAfterContainer.style.setProperty('--position', `${e.target.value}%`);
+            })
+
+        
         // Get the button
         let mybutton = document.getElementById("myBtn");
 

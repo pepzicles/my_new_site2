@@ -13,6 +13,7 @@ main{
 
 .container-beforeafter{
     display: grid;
+    width: 50%;
     place-content: center;
     position: relative; 
     overflow: hidden;
